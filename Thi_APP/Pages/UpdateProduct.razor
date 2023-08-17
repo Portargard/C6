@@ -1,0 +1,18 @@
+﻿@page "/UpdateProduct/{id}"
+@inherits UpdateProductBase
+<h3>Update</h3>
+<Microsoft.AspNetCore.Components.Forms.EditForm Model="product">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" @bind="product.Name"/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="text" @bind="product.Price">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Quantity</label>
+        <input type="text" @bind="product.Qty"/>
+    </div>
+    <button class="btn btn-primary" type="submit" @onclick="Update">Submit</button>
+</Microsoft.AspNetCore.Components.Forms.EditForm>

@@ -1,0 +1,34 @@
+﻿@page "/GetAllProduct"
+@inherits GetAllProductBase
+<h1>GetAllProduct</h1>
+
+<h3>ListProducts</h3>
+
+@if (products!=null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <th scope="row">@Count</th>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                    <td>@product.Qty</td>
+                    <td><a class="btn btn-danger" @onclick="() => DeleteProduct(product.Id)">Delete</a>/<a class="btn btn-alert-danger"  @onclick="() => UpdateProduct(product.Id)">Update</a></td>
+                </tr>
+                Count++;
+            }
+        </tbody>
+    </table>
+}
+

@@ -1,0 +1,35 @@
+﻿[Inject]
+        protected IUploadFileService uploadFileService { get; set; }
+        public IFileListEntry file { get; set; }
+        public string uploadMessage { get; set; } = string.Empty;
+
+        public async Task HandleFileSelected(IFileListEntry[] files)
+        {
+            file = files.FirstOrDefault();
+            
+        }
+        public async Task Save()
+        {
+            if (file != null)
+            {
+                await uploadFileService.UploadFileAsync(file);
+                uploadMessage = "Thanh cong";
+            }
+            else { uploadMessage = "That Bai"; }
+        }
+
+
+@if (file != null)
+{
+    <span>File Name: @file.Name</span>
+    <br />
+    <span>Size: @file.Size</span>
+    <br />
+    <span>Type: @file.Type</span>
+}
+<br />
+<button @onclick="Save" class="btn btn-primary">Save</button>
+@if (!string.IsNullOrEmpty(uploadMessage))
+{
+    <span>@uploadMessage</span>
+}

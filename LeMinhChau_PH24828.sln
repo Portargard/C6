@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thi_Data", "Thi_Data\Thi_Data.csproj", "{34966A76-1E9A-4258-8969-0FFF2C6C9878}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thi_API", "Thi_API\Thi_API.csproj", "{79D2A78A-5123-40B0-A3D6-9F5B94D48123}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thi_APP", "Thi_APP\Thi_APP.csproj", "{F17BE506-E167-40F0-91D5-4981A8CB86FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34966A76-1E9A-4258-8969-0FFF2C6C9878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34966A76-1E9A-4258-8969-0FFF2C6C9878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34966A76-1E9A-4258-8969-0FFF2C6C9878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34966A76-1E9A-4258-8969-0FFF2C6C9878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D2A78A-5123-40B0-A3D6-9F5B94D48123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D2A78A-5123-40B0-A3D6-9F5B94D48123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D2A78A-5123-40B0-A3D6-9F5B94D48123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D2A78A-5123-40B0-A3D6-9F5B94D48123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17BE506-E167-40F0-91D5-4981A8CB86FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17BE506-E167-40F0-91D5-4981A8CB86FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17BE506-E167-40F0-91D5-4981A8CB86FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17BE506-E167-40F0-91D5-4981A8CB86FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB6C7D0E-D092-41C1-8684-3BCA2BDDBD09}
+	EndGlobalSection
+EndGlobal
